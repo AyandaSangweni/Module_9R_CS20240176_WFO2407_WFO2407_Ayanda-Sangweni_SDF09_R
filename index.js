@@ -1,7 +1,7 @@
 let cards = []
 let sum = 0
 let hasBlackJack = false
-let isAlive = true
+let isAlive = false
 let message = ""
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
@@ -47,9 +47,11 @@ function renderGame() {
 }
 
 function newCard() {
+    if (isAlive === true && hasBlackJack === false) {
     let card = getRandomCard()
     sum += card
     cards.push(card)
     console.log(cards)
     renderGame()
+    }
 }
