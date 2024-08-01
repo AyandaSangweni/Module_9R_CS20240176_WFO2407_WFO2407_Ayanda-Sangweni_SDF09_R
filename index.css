@@ -2,13 +2,23 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url("images/table.png");
     background-size: cover;
+    background-position: center;
     text-align: center;
     color: white;
     font-weight: bold;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2em;
 }
 
 h1 {
     color: goldenrod;
+    font-size: 2em;
+}
+
+#message-el, #cards-el, #sum-el, #player-el {
+    font-size: 1.5em;
 }
 
 #message-el {
@@ -17,13 +27,13 @@ h1 {
 
 button {
     color: #016f32;
-    width: 150px;
+    width: 200px;
     background: goldenrod;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 10px 0;
     font-weight: bold;
     border: none;
     border-radius: 2px;
     margin-bottom: 2px;
     margin-top: 2px;
+    font-size: 1.2em;
 }
